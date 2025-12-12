@@ -1,8 +1,9 @@
 # ysien.github.io
 
-Author: Ysien Lau
-Last updated: 12/12/2025
+**Author**: Ysien Lau
+**Last updated**: 12/12/2025
 
-This is my new repository
-
-status add commit push
+Updating the repository:
+1. git add .
+2. git commit -m "update"
+3. git push
