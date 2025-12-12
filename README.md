@@ -8,3 +8,6 @@ Updating the repository:
 2. git commit -m "update"
 3. git push
 
+## Cluster Bar Graph showing employment rates in different regions
+
+![figure of a plot](Plots/unemployment.html)
