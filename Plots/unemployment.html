@@ -1,0 +1,183 @@
+            <iframe src='about:blank' style='border:none !important;' width='800' height='500' srcdoc="&lt;html lang=&quot;en&quot;>
+   &lt;head>
+       &lt;meta charset=&quot;UTF-8&quot;>
+       &lt;style> html, body { margin: 0; padding: 0; overflow: hidden; } &lt;/style>
+       &lt;script type=&quot;text/javascript&quot; data-lets-plot-script=&quot;library&quot; src=&quot;https://cdn.jsdelivr.net/gh/JetBrains/lets-plot@v4.7.2/js-package/distr/lets-plot.min.js&quot;>&lt;/script>
+   &lt;/head>
+   &lt;body>
+          &lt;div id=&quot;EMpCyZ&quot;>&lt;/div>
+   &lt;script type=&quot;text/javascript&quot; data-lets-plot-script=&quot;plot&quot;>
+   
+   (function() {
+   // ----------
+   
+   const forceImmediateRender = false;
+   const responsive = false;
+   
+   let sizing = {
+       width_mode: &quot;FIXED&quot;,
+       height_mode: &quot;FIXED&quot;,
+       width: 800.0, 
+       height: 500.0 
+   };
+   
+   const preferredWidth = document.body.dataset.letsPlotPreferredWidth;
+   if (preferredWidth !== undefined) {
+       sizing = {
+           width_mode: 'FIXED',
+           height_mode: 'SCALED',
+           width: parseFloat(preferredWidth)
+       };
+   }
+   
+   const containerDiv = document.getElementById(&quot;EMpCyZ&quot;);
+   let fig = null;
+   
+   function renderPlot() {
+       if (fig === null) {
+           const plotSpec = {
+&quot;data&quot;:{
+&quot;REGION&quot;:[&quot;!Karas&quot;,&quot;Erongo&quot;,&quot;Hardap&quot;,&quot;Kavango East&quot;,&quot;Kavango West&quot;,&quot;Khomas&quot;,&quot;Kunene&quot;,&quot;Ohangwena&quot;,&quot;Omaheke&quot;,&quot;Omusati&quot;,&quot;Oshana&quot;,&quot;Oshikoto&quot;,&quot;Otjozondjupa&quot;,&quot;Zambezi&quot;,&quot;!Karas&quot;,&quot;Erongo&quot;,&quot;Hardap&quot;,&quot;Kavango East&quot;,&quot;Kavango West&quot;,&quot;Khomas&quot;,&quot;Kunene&quot;,&quot;Ohangwena&quot;,&quot;Omaheke&quot;,&quot;Omusati&quot;,&quot;Oshana&quot;,&quot;Oshikoto&quot;,&quot;Otjozondjupa&quot;,&quot;Zambezi&quot;],
+&quot;GENDER&quot;:[&quot;FEMALE_UNEMPLOYMENT_RATE&quot;,&quot;FEMALE_UNEMPLOYMENT_RATE&quot;,&quot;FEMALE_UNEMPLOYMENT_RATE&quot;,&quot;FEMALE_UNEMPLOYMENT_RATE&quot;,&quot;FEMALE_UNEMPLOYMENT_RATE&quot;,&quot;FEMALE_UNEMPLOYMENT_RATE&quot;,&quot;FEMALE_UNEMPLOYMENT_RATE&quot;,&quot;FEMALE_UNEMPLOYMENT_RATE&quot;,&quot;FEMALE_UNEMPLOYMENT_RATE&quot;,&quot;FEMALE_UNEMPLOYMENT_RATE&quot;,&quot;FEMALE_UNEMPLOYMENT_RATE&quot;,&quot;FEMALE_UNEMPLOYMENT_RATE&quot;,&quot;FEMALE_UNEMPLOYMENT_RATE&quot;,&quot;FEMALE_UNEMPLOYMENT_RATE&quot;,&quot;MALE_UNEMPLOYMENT_RATE&quot;,&quot;MALE_UNEMPLOYMENT_RATE&quot;,&quot;MALE_UNEMPLOYMENT_RATE&quot;,&quot;MALE_UNEMPLOYMENT_RATE&quot;,&quot;MALE_UNEMPLOYMENT_RATE&quot;,&quot;MALE_UNEMPLOYMENT_RATE&quot;,&quot;MALE_UNEMPLOYMENT_RATE&quot;,&quot;MALE_UNEMPLOYMENT_RATE&quot;,&quot;MALE_UNEMPLOYMENT_RATE&quot;,&quot;MALE_UNEMPLOYMENT_RATE&quot;,&quot;MALE_UNEMPLOYMENT_RATE&quot;,&quot;MALE_UNEMPLOYMENT_RATE&quot;,&quot;MALE_UNEMPLOYMENT_RATE&quot;,&quot;MALE_UNEMPLOYMENT_RATE&quot;],
+&quot;UNEMPLOYMENT_RATE&quot;:[21.861650997113735,22.232219597076668,18.786954619102193,26.10489819564666,15.536891525029004,23.533827160031965,19.95210370990921,10.910124117822832,30.966289367388654,8.086530801900253,16.543787567525943,17.86195734883561,24.10734844083918,22.147269035549147,22.642026057923125,24.64237297139329,19.39563979686506,28.474588735541108,14.08161627196172,25.011752519894937,22.85588919972143,17.26210879501976,18.734046909077087,13.343886889642869,21.317654674400032,22.095637053422294,20.10990427194819,18.303471021942507]
+},
+&quot;mapping&quot;:{
+&quot;x&quot;:&quot;REGION&quot;,
+&quot;y&quot;:&quot;UNEMPLOYMENT_RATE&quot;,
+&quot;fill&quot;:&quot;GENDER&quot;
+},
+&quot;data_meta&quot;:{
+&quot;series_annotations&quot;:[{
+&quot;type&quot;:&quot;str&quot;,
+&quot;factor_levels&quot;:[&quot;!Karas&quot;,&quot;Erongo&quot;,&quot;Hardap&quot;,&quot;Kavango East&quot;,&quot;Kavango West&quot;,&quot;Khomas&quot;,&quot;Kunene&quot;,&quot;Ohangwena&quot;,&quot;Omaheke&quot;,&quot;Omusati&quot;,&quot;Oshana&quot;,&quot;Oshikoto&quot;,&quot;Otjozondjupa&quot;,&quot;Zambezi&quot;],
+&quot;column&quot;:&quot;REGION&quot;
+},{
+&quot;type&quot;:&quot;str&quot;,
+&quot;column&quot;:&quot;GENDER&quot;
+},{
+&quot;type&quot;:&quot;float&quot;,
+&quot;column&quot;:&quot;UNEMPLOYMENT_RATE&quot;
+}]
+},
+&quot;theme&quot;:{
+&quot;name&quot;:&quot;light&quot;,
+&quot;legend_text&quot;:{
+&quot;size&quot;:10.0,
+&quot;blank&quot;:false
+},
+&quot;legend_title&quot;:{
+&quot;face&quot;:&quot;bold&quot;,
+&quot;size&quot;:12.0,
+&quot;blank&quot;:false
+},
+&quot;text&quot;:{
+&quot;family&quot;:&quot;Arial&quot;,
+&quot;size&quot;:12.0,
+&quot;blank&quot;:false
+},
+&quot;axis_title&quot;:{
+&quot;size&quot;:12.0,
+&quot;blank&quot;:false
+},
+&quot;axis_text&quot;:{
+&quot;size&quot;:10.0,
+&quot;blank&quot;:false
+},
+&quot;plot_title&quot;:{
+&quot;face&quot;:&quot;bold&quot;,
+&quot;size&quot;:16.0,
+&quot;blank&quot;:false
+}
+},
+&quot;ggtitle&quot;:{
+&quot;text&quot;:&quot;When compared by region, men appear to have higher unemployment rates than women&quot;,
+&quot;subtitle&quot;:&quot;However, levels of unemployment among women are significantly higher in Omaheke&quot;
+},
+&quot;guides&quot;:{
+&quot;x&quot;:{
+&quot;title&quot;:&quot;Region&quot;
+},
+&quot;y&quot;:{
+&quot;title&quot;:&quot;Unemployment Rate among Labor Force (%)&quot;
+}
+},
+&quot;ggsize&quot;:{
+&quot;width&quot;:800.0,
+&quot;height&quot;:500.0
+},
+&quot;kind&quot;:&quot;plot&quot;,
+&quot;scales&quot;:[{
+&quot;name&quot;:&quot;Gender&quot;,
+&quot;aesthetic&quot;:&quot;fill&quot;,
+&quot;breaks&quot;:[&quot;FEMALE_UNEMPLOYMENT_RATE&quot;,&quot;MALE_UNEMPLOYMENT_RATE&quot;],
+&quot;labels&quot;:[&quot;Female&quot;,&quot;Male&quot;],
+&quot;values&quot;:[&quot;steelblue&quot;,&quot;coral&quot;]
+},{
+&quot;aesthetic&quot;:&quot;y&quot;,
+&quot;limits&quot;:[0.0,40.0]
+}],
+&quot;layers&quot;:[{
+&quot;geom&quot;:&quot;bar&quot;,
+&quot;stat&quot;:&quot;identity&quot;,
+&quot;mapping&quot;:{
+},
+&quot;position&quot;:{
+&quot;name&quot;:&quot;dodge&quot;,
+&quot;width&quot;:0.9
+},
+&quot;data_meta&quot;:{
+&quot;series_annotations&quot;:[{
+&quot;column&quot;:&quot;REGION&quot;,
+&quot;factor_levels&quot;:[&quot;!Karas&quot;,&quot;Erongo&quot;,&quot;Hardap&quot;,&quot;Kavango East&quot;,&quot;Kavango West&quot;,&quot;Khomas&quot;,&quot;Kunene&quot;,&quot;Ohangwena&quot;,&quot;Omaheke&quot;,&quot;Omusati&quot;,&quot;Oshana&quot;,&quot;Oshikoto&quot;,&quot;Otjozondjupa&quot;,&quot;Zambezi&quot;]
+}]
+},
+&quot;alpha&quot;:0.9,
+&quot;data&quot;:{
+}
+}],
+&quot;metainfo_list&quot;:[],
+&quot;spec_id&quot;:&quot;5&quot;
+};
+           fig = LetsPlot.buildPlotFromProcessedSpecs(plotSpec, containerDiv, sizing);
+       } else {
+           fig.updateView({});
+       }
+   }
+   
+   const renderImmediately = 
+       forceImmediateRender || (
+           sizing.width_mode === 'FIXED' &amp;&amp; 
+           (sizing.height_mode === 'FIXED' || sizing.height_mode === 'SCALED')
+       );
+   
+   if (renderImmediately) {
+       renderPlot();
+   }
+   
+   if (!renderImmediately || responsive) {
+       // Set up observer for initial sizing or continuous monitoring
+       var observer = new ResizeObserver(function(entries) {
+           for (let entry of entries) {
+               if (entry.contentBoxSize &amp;&amp; 
+                   entry.contentBoxSize[0].inlineSize > 0) {
+                   if (!responsive &amp;&amp; observer) {
+                       observer.disconnect();
+                       observer = null;
+                   }
+                   renderPlot();
+                   if (!responsive) {
+                       break;
+                   }
+               }
+           }
+       });
+       
+       observer.observe(containerDiv);
+   }
+   
+   // ----------
+   })();
+   
+   &lt;/script>
+   &lt;/body>
+&lt;/html>"></iframe>    
