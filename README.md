@@ -10,4 +10,4 @@ Updating the repository:
 
 ## Cluster Bar Graph showing employment rates in different regions
 
-![figure of a plot](Plots/unemployment.html)
+![figure of a plot](unemployment.png)
