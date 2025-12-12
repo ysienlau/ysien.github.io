@@ -1,9 +1,8 @@
 # ysien.github.io
 
-## Header
+Author: Ysien Lau
+Last updated: 12/12/2025
 
-You can type directly like this!
-- Item 1
-- Item 2
+This is my new repository
 
-We have to be more **explicit** when saving changes - use the commit changes button
+status add commit push
