@@ -1,9 +1,14 @@
-# ysien.github.io
+# Ysien Lau — Portfolio
 
-**Author**: Ysien Lau
-**Last updated**: 12/12/2025
+Personal portfolio site, built with plain HTML/CSS.
 
-Updating the repository:
-1. git add .
-2. git commit -m "update"
-3. git push
+Live at: https://ysienlau.github.io
+
+## Pages
+- `index.html` — homepage
+- `about.html` — bio and CV
+- `projects.html` — selected projects
+
+## Built with
+- HTML, CSS, JavaScript
+- Hosted via GitHub Pages
